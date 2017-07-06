@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cheetahM/liri/issues"
   },
-  "homepage": "https://github.com/cheetahM/liri#readme"
+  "homepage": "https://github.com/cheetahM/liri#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
 }
