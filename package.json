@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/cheetahM/liri#readme",
   "dependencies": {
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "twitter": "^1.7.1"
   }
 }
