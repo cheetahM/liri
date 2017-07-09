@@ -1,56 +1,132 @@
 var request = require('request');
 var fs = require('fs');
 var Twitter = require('twitter');
+var Spotify = require('node-spotify-api');
 
+var keys = require('./keys');
+var tweet = new Twitter(keys.twitterKeys);
 var action = process.argv[2];
-var value = process.argv[3];
+var userRequest = process.argv[3];
+
+var params = {
+    screen_name: 'cmeshram19',
+    count: 20
+}
 
 
-function getMovieInfo() {
-    if (value == null) {
-        value = 'Moana';
-    }
-    var queryUrl = "http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=40e9cece";
-    request( queryUrl, function(error, response, body) {
+switch (action) {
+    case 'my-tweets':
+        getTweets();
+        break;
+    case 'spotify-this-song':
+        getSpotifyInfo(userRequest);
+        break;
+    case 'movie-this':
+        getMovieInfo(userRequest);
+        break;
+    case 'do-what-it-says':
+        doIt();
+        break;
+}
+
+
+// 'my-tweets' command invokes getTweets function
+function getTweets() {
+    tweet.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (!error && response.statusCode == 200) {
-            jsonBody = JSON.parse(body);
+            fs.appendFile('terminal.log', ('=============== LOG ENTRY BEGIN ===============\r\n' + Date() + '\r\n \r\nTERMINAL COMMANDS:\r\n$: ' + process.argv + '\r\n \r\nDATA OUTPUT:\r\n'), function(err) {
+                if (err) throw err;
+            });
             console.log(' ');
-            console.log('Title: ' + jsonBody.Title);
-            console.log('Year: ' + jsonBody.Year);
-            console.log('IMDb Rating: ' + jsonBody.imdbRating);
-            console.log('Country: ' + jsonBody.Country);
-            console.log('Language: ' + jsonBody.Language);
-            console.log('Plot: ' + jsonBody.Plot);
-            console.log('Actors: ' + jsonBody.Actors);
-            console.log(' ');
-            fs.appendFile('log.txt', ('=============== LOG ENTRY BEGIN ===============\r\n' + Date() + '\r\n \r\nTERMINAL COMMANDS: ' + process.argv + '\r\nDATA OUTPUT:\r\n' + 'Title: ' + jsonBody.Title + '\r\nYear: ' + jsonBody.Year + '\r\nIMDb Rating: ' + jsonBody.imdbRating + '\r\nCountry: ' + jsonBody.Country + '\r\nLanguage: ' + jsonBody.Language + '\r\nPlot: ' + jsonBody.Plot + '\r\nActors: ' + jsonBody.Actors + '\r\nRotten Tomatoes Rating: ' + jsonBody.tomatoRating + '\r\nRotten Tomatoes URL: ' + jsonBody.tomatoURL + '\r\n =============== LOG ENTRY END ===============\r\n \r\n'), function(err) {
+            console.log('Last 20 Tweets:')
+            for (i = 0; i < tweets.length; i++) {
+                var number = i + 1;
+                console.log(' ');
+                console.log([i + 1] + '. ' + tweets[i].text);
+                console.log('Created on: ' + tweets[i].created_at);
+                console.log(' ');
+                fs.appendFile('terminal.log', (number + '. Tweet: ' + tweets[i].text + '\r\nCreated at: ' + tweets[i].created_at + ' \r\n'), function(err) {
+                    if (err) throw err;
+                });
+            }
+            fs.appendFile('terminal.log', ('=============== LOG ENTRY END ===============\r\n \r\n'), function(err) {
                 if (err) throw err;
             });
         }
     });
-
-    // request('http://www.google.com', function (error, response, body) {
-    //     console.log('error:', error); // Print the error if one occurred 
-    //     console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
-    //     console.log('body:', body); // Print the HTML for the Google homepage. 
-    // });
 }
 
-function getTweets() {
 
-    var client = new Twitter({
-        consumer_key: '',
-        consumer_secret: '',
-        access_token_key: '',
-        access_token_secret: ''
+// 'spotify-this-song' command invokes getSpotifyInfo(userRequest)
+function getSpotifyInfo(userRequest) {
+    var spotify = new Spotify({
+        id: "f39bab0d160e4672939bf8cfcb5293d8",
+        secret: "40bbec9cc72144439ff7ffaf9d12e717"
     });
+
+    if (userRequest == null) {
+        userRequest = 'The Sign';
+    }
     
-    var params = {screen_name: 'nodejs'};
-    client.get('statuses/user_timeline', params, function(error, tweets, response) {
-        if (!error) {
-            console.log(tweets);
+    spotify.search({ type: 'track', query: userRequest }, function(err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+
+        // caching for perfromance improvement
+        var tracks = data.tracks.items[0];
+        console.log("Artist(s): ", tracks.artists[0].name);
+        console.log("Song: ", tracks.name);
+        console.log('Preview Link: ' + tracks.preview_url);
+        console.log('Album: ' + tracks.album.name);
+        console.log(' ');
+        fs.appendFile('terminal.log', ('=============== LOG ENTRY BEGIN ===============\r\n' + Date() +'\r\n \r\nTERMINAL COMMANDS:\r\n$: ' + process.argv + '\r\n \r\nDATA OUTPUT:\r\n' + 'Artist: ' + tracks.artists[0].name + '\r\nSong: ' + tracks.name + '\r\nPreview Link: ' + tracks.preview_url + '\r\nAlbum: ' + tracks.album.name + '\r\n=============== LOG ENTRY END ===============\r\n \r\n'), function(err) {
+            if (err) throw err;
+        });
+
+    });
+
+}
+
+// 'movie-this' command invokes getMovieInfo function
+function getMovieInfo(userRequest) {
+    if (userRequest == null) {
+        userRequest = 'Mr. Nobody';
+    }
+    var queryUrl = "http://www.omdbapi.com/?t=" + userRequest + "&y=&plot=short&apikey=40e9cece";
+    request( queryUrl, function(error, response, body) {
+        if (!error && response.statusCode == 200) {
+            var movieData = JSON.parse(body);
+            console.log(' ');
+            console.log('Title: ' + movieData.Title);
+            console.log('Year: ' + movieData.Year);
+            console.log('IMDb Rating: ' + movieData.imdbRating);
+            console.log('Rotten Tomatoes Rating: ' + movieData.Ratings[1].Value);
+            console.log('Country: ' + movieData.Country);
+            console.log('Language: ' + movieData.Language);
+            console.log('Plot: ' + movieData.Plot);
+            console.log('Actors: ' + movieData.Actors);
+            console.log(' ');
+            fs.appendFile('log.txt', ('=============== LOG ENTRY BEGIN ===============\r\n' + Date() + '\r\n \r\nTERMINAL COMMANDS: ' + process.argv + '\r\nDATA OUTPUT:\r\n' + 'Title: ' + movieData.Title + '\r\nYear: ' + movieData.Year + '\r\nIMDb Rating: ' + movieData.imdbRating + '\r\nCountry: ' + movieData.Country + '\r\nLanguage: ' + movieData.Language + '\r\nPlot: ' + movieData.Plot + '\r\nActors: ' + movieData.Actors + '\r\nRotten Tomatoes Rating: ' + movieData.Ratings[1].Value + '\r\n =============== LOG ENTRY END ===============\r\n \r\n'), function(err) {
+                if (err) throw err;
+            });
         }
     });
 }
 
-getMovieInfo();
+// 'do-what-it-says' command invokes doIt function
+function doIt() {
+    fs.readFile('random.txt', 'utf8', function(error, data) {
+        if (error) {
+            console.log(error);
+        } else {
+            var dataArr = data.split(',');
+            if (dataArr[0] === 'spotify-this-song') {
+                getSpotifyInfo(dataArr[1]);
+            }
+            if (dataArr[0] === 'movie-this') {
+                getMovieInfo(dataArr[1]);
+            }
+        }
+    });
+}

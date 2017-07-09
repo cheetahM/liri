@@ -1,0 +1,351 @@
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 13:47:10 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/index.js
+DATA OUTPUT:
+Title: Moana
+Year: 2016
+IMDb Rating: 7.7
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 13:47:36 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/index.js
+DATA OUTPUT:
+Title: Moana
+Year: 2016
+IMDb Rating: 7.7
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 13:48:25 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/index.js
+DATA OUTPUT:
+Title: Moana
+Year: 2016
+IMDb Rating: 7.7
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 14:12:19 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/index.js,--inspect
+DATA OUTPUT:
+Title: Moana
+Year: 2016
+IMDb Rating: 7.7
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 16:50:05 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri.js,my-tweets
+DATA OUTPUT:
+Title: Moana
+Year: 2016
+IMDb Rating: 7.7
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:48:56 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: Moana
+Year: 2016
+IMDb Rating: 7.7
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:49:32 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this,true,grit
+DATA OUTPUT:
+Title: True
+Year: 2004
+IMDb Rating: 8.2
+Country: France, Germany
+Language: English
+Plot: The phone rings, startling Tomas, who is seated in front of the computer. He feels for the telephone receiver. Tomas is blind. His girlfriend, Francine, tells him that it's all over and ...
+Actors: Natalie Portman, Melchior Derouet
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:49:58 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this,true grit
+DATA OUTPUT:
+Title: True Grit
+Year: 2010
+IMDb Rating: 7.6
+Country: USA
+Language: English
+Plot: A tough U.S. Marshal helps a stubborn teenager track down her father's murderer.
+Actors: Jeff Bridges, Hailee Steinfeld, Matt Damon, Josh Brolin
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:51:05 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this,true grit
+DATA OUTPUT:
+Title: True Grit
+Year: 2010
+IMDb Rating: 7.6
+Country: USA
+Language: English
+Plot: A tough U.S. Marshal helps a stubborn teenager track down her father's murderer.
+Actors: Jeff Bridges, Hailee Steinfeld, Matt Damon, Josh Brolin
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:51:34 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:52:18 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:53:26 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:53:41 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:54:21 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:54:42 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:55:37 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:58:51 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: The Matrix
+Year: 1999
+IMDb Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 20:59:04 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this,true grit
+DATA OUTPUT:
+Title: True Grit
+Year: 2010
+IMDb Rating: 7.6
+Country: USA
+Language: English
+Plot: A tough U.S. Marshal helps a stubborn teenager track down her father's murderer.
+Actors: Jeff Bridges, Hailee Steinfeld, Matt Damon, Josh Brolin
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 21:00:29 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: Mr. Nobody
+Year: 2009
+IMDb Rating: 7.9
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 21:01:49 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this
+DATA OUTPUT:
+Title: Mr. Nobody
+Year: 2009
+IMDb Rating: 7.9
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 21:02:24 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this,dracula
+DATA OUTPUT:
+Title: Dracula
+Year: 1931
+IMDb Rating: 7.6
+Country: USA
+Language: English, Hungarian, Latin
+Plot: The ancient vampire Count Dracula arrives in England and begins to prey upon the virtuous young Mina.
+Actors: Bela Lugosi, Helen Chandler, David Manners, Dwight Frye
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+ =============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Sat Jul 08 2017 21:15:23 GMT-0700 (PDT)
+ 
+TERMINAL COMMANDS: /usr/local/Cellar/node/8.1.0_1/bin/node,/Users/bash/dev/Berkeley/liri/liri,movie-this,dracula
+DATA OUTPUT:
+Title: Dracula
+Year: 1931
+IMDb Rating: 7.6
+Country: USA
+Language: English, Hungarian, Latin
+Plot: The ancient vampire Count Dracula arrives in England and begins to prey upon the virtuous young Mina.
+Actors: Bela Lugosi, Helen Chandler, David Manners, Dwight Frye
+Rotten Tomatoes Rating: 91%
+ =============== LOG ENTRY END ===============
+ 
